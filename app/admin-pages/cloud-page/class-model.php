@@ -301,7 +301,7 @@ class Model {
 	 */
 	public static function list_user_roles() {
 		$recipients     = self::get_schedule_item( 'recipients' );
-		$allowed_roles  = array_keys( Utilities::roles_names( array( 'manage_options', 'edit_posts' ) ) );
+		$allowed_roles  = array_keys( Utilities::roles_names( apply_filters( 'blc_user_roles', array( 'manage_options', 'edit_posts' ), 'user_roles' ) ) );
 		$user_count     = count_users();
 		$roles_list     = array();
 		$rec_roles_list = array();
