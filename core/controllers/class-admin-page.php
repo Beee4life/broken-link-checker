@@ -189,7 +189,7 @@ abstract class Admin_Page extends Base {
 			$this->hook_suffix = add_menu_page(
 				$this->page_prop( 'page_title' ),
 				$this->page_prop( 'menu_title' ),
-				$this->page_prop( 'capability' ),
+                apply_filters(  'blc_admin_page', $this->page_prop( 'capability' ), 'admin_menu' ),
 				$this->page_prop( 'menu_slug' ),
 				array( $this, 'output' ),
 				$this->page_prop( 'icon_url' ),
@@ -261,7 +261,7 @@ abstract class Admin_Page extends Base {
 				$this->page_prop( 'parent_slug' ),
 				$this->page_prop( 'page_title' ),
 				$this->page_prop( 'menu_title' ),
-				$this->page_prop( 'capability' ),
+                apply_filters(  'blc_admin_page', $this->page_prop( 'capability' ), 'admin_submenu' ),
 				$this->page_prop( 'menu_slug' ),
 				array( $this, 'output' ),
 				$this->page_prop( 'position' )

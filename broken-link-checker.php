@@ -10,7 +10,7 @@
  * Plugin Name:       Broken Link Checker
  * Plugin URI:        https://wordpress.org/plugins/broken-link-checker/
  * Description:       Checks your blog for broken links and missing images and notifies you on the dashboard if any are found.
- * Version:           2.1.0
+ * Version:           2.2.0
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            WPMU DEV
